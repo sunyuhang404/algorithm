@@ -48,7 +48,8 @@ const prefixRec = (arr) => {
   let mid = Math.floor(length / 2);
   let left = arr.slice(0, mid);
   let right = arr.slice(mid, length);
-  return prefixStr(func2(left), func2(right));
+  console.log('******************: ', left, right)
+  return prefixStr(prefixRec(left), prefixRec(right));
 }
 
 // 求两个字符串最长公共前缀
@@ -62,4 +63,4 @@ const prefixStr = (str1, str2) => {
   return str1.substring(0, i);
 }
 const res2 = func2('flower', 'flow', 'flight');
-console.log(res2);
+// console.log(res2);
