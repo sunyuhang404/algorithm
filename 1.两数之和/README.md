@@ -23,6 +23,9 @@
 
 # 思路
 需要借用 Map
+
 遍历数组，将每个元素以 [element, i] 的形式保存到 map 中
+
 每次循环到 map 中查找 target - nums[i] 的结果在 map 中是否存在
+
 如果存在，就返回 map 中该元素的 value 和 当前元素的索引
