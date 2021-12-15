@@ -20,5 +20,7 @@ def add(l1, l2):
 
     if l1 : l1 = l1.next
     if l2 : l2 = l2.next
+
   if t : quick.next = ListNode(t)
+  
   return head.next
